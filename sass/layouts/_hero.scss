@@ -41,7 +41,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #2F303A;
     @include retina {
         background-image: var(--bg-gradient), url(/images/mob-hero-2x.jpg);
     }

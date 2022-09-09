@@ -449,7 +449,6 @@ section .no-padding {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #2F303A;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
