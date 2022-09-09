@@ -1,0 +1,388 @@
+// .footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: #2F303A;
+//     min-height: 252px;
+
+//     .container {
+//         display: flex;
+//         align-items: baseline;
+//     }
+
+//     .link:hover, 
+//     .link:focus {
+//     color: var(--accent-color);
+//     }
+// }
+
+
+
+// .footer-logo {
+//     margin-bottom: 20;
+//     color: #fff;
+//     font-family: 'Raleway', sans-serif;
+//     text-decoration: none;
+//     @include font (700, 26px, 1.19, 0.03em);
+// }
+
+// .address {
+//     margin-top: 20px;
+// }
+
+// .footer-address {
+//     margin-top: 20px;
+//     color: #fff;
+//     text-decoration: none;
+//     @include font (400, 14px, 1.71, 0.03em);
+//     font-style: normal;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .footer-links .item {
+//     margin-top: 9px;
+// }
+
+// .footer-links .link {
+//     color: rgba(255, 255, 255, 0.6);
+//     text-decoration: none;
+//     @include font (400, 14px, 1.71, 0.03em);
+//     font-style: normal;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+
+// .footer-sm {
+//     margin-left: 70px;
+
+//     &-title {
+//         @include font (700, 14px, 16px, 0.03em);
+//         text-transform: uppercase;
+//         color: #FFFFFF;
+//     }
+    
+//     &-all {
+//         display: flex;
+//         justify-content: left;
+//         margin-top: 20px;
+//     }
+    
+//     &-item {
+//         margin-right: 10px;
+//     }
+    
+//     &-link {
+//         width: 44px;
+//         height: 44px;
+//         border-radius: 50%;
+//         background-color: rgba(255, 255, 255, 0.1);
+//         @include flex;
+//         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+//         &:hover,
+//         &:focus {
+//         background-color: var(--accent-color);
+//         }
+//     }
+    
+//     &-icon {
+//         fill: #fff;
+//         position: relative;
+//     }
+// }
+
+// .footer-subscribe {
+//     margin-left: 93px;
+// }
+
+// .subscribe-title {
+//     @include font (700, 14px, 16px, 0.03em);
+//     text-transform: uppercase;
+//     color: #FFFFFF;
+//     margin-bottom: 20px;
+// }
+  
+// .subscribe-wrap {
+// display: flex;
+// }
+
+// .footer-input {
+//     padding-left: 16px;
+//     width: 358px;
+//     height: 50px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     outline: none;
+//     background-color: transparent;
+//     color: #fff;
+//     transition: border-color 250ms var(--cubic);
+
+//     &:focus {
+//         border-color: var(--accent-color);
+//     }
+
+//     &::placeholder {
+//         @include font (none, 16px, 1.25, 0.03em);
+//         display: flex;
+//         align-items: center;
+//         color: rgba(255, 255, 255, 0.6);
+//     }
+// }
+
+// .subscribe-button {
+//     width: 200px;
+//     height: 50px;
+//     padding: 10px 28px;
+//     margin-left: 12px;
+//     @include font (700, 16px, 1.88, 0.06em);
+//     @include flex;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     background-color: var(--accent-color);
+//     color: #fff;
+//     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+//     cursor: pointer;
+//     }
+// }
+
+// .subscribe-icon {
+// margin-left: 10px;
+// }
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+    min-height: 603px;
+
+    @include tablet {
+        min-height: 463px;
+    }
+
+    @include desktop {
+        min-height: 252px;
+    }
+
+    .container {
+        display: block;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
+
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+        
+    }
+
+    .link:hover, 
+    .link:focus {
+    color: var(--accent-color);
+    }
+}
+
+.footer-element {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include desktop {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-logo {
+    margin-bottom: 20;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    @include font (700, 26px, 1.19, 0.03em);
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.footer-address {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    @include font (400, 14px, 1.71, 0.03em);
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-links .item {
+    margin-top: 9px;
+}
+
+.footer-links .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    @include font (400, 14px, 1.71, 0.03em);
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-sm {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include desktop {
+        margin-left: 70px;
+    }
+    
+
+    &-title {
+        @include font (700, 14px, 16px, 0.03em);
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    &-all {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+            justify-content: left;
+        }
+    }
+    
+    &-item {
+        margin-right: 10px;
+    }
+    
+    &-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        @include flex;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+        background-color: var(--accent-color);
+        }
+    }
+    
+    &-icon {
+        fill: #fff;
+        position: relative;
+    }
+}
+
+.footer-subscribe {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include desktop {
+        margin-left: 93px;
+    }   
+}
+
+.subscribe-title {
+    @include font (700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+  
+.subscribe-wrap {
+    display: block;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: flex;
+    }
+}
+
+.footer-input {
+    padding-left: 16px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    transition: border-color 250ms var(--cubic);
+
+    @include tablet {
+        width: 450px;
+    }
+
+    @include desktop {
+        width: 358px;
+    }
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        @include font (none, 16px, 1.25, 0.03em);
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.subscribe-button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    @include font (700, 16px, 1.88, 0.06em);
+    @include flex;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: #fff;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    }
+
+    @include desktop {
+        padding: 10px 28px;
+        margin-top: 0;
+        margin-left: 12px;
+    }
+}
+
+.subscribe-icon {
+margin-left: 10px;
+}

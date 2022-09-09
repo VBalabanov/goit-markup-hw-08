@@ -1,0 +1,94 @@
+.team {
+    background-color: #F5F4FA;
+
+    .section-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        @include font (700, 28px, 1.17, 0.03em);
+
+        @include tablet {
+            margin-bottom: 30px;
+            @include font (700, 28px, 1.17, 0.03em);
+        }
+
+        @include desktop {
+            margin-bottom: 50px;
+            @include font (700, 36px, 1.17, 0.03em);
+        }
+    }
+}
+
+.team-list {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.team-member{
+    background-color: #fff; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+    width: calc((100% - 90px) / 4);
+    }
+
+    .inscription {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .title {
+        margin-bottom: 10px;
+        color: var(--title-text-color);
+        @include font (500, 16px, 1.19, 0.03em);
+        text-align: center;
+    }
+    .text {
+        margin-top: 0;
+        margin-bottom: 16px;
+        @include font (400, 16px, 19px, 0.03em);
+        text-align: center;
+    }
+}
+
+.member-sm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &-icon {
+        fill: #AFB1B8;
+    }
+}
+
+.member-sm-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    @include flex;
+    position: relative;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    }
+
+    &:hover .member-sm-icon,
+    &:focus .member-sm-icon {
+    fill: #fff;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,40 @@
+.features__list {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+    .features__item {
+        width: 100%;
+        @include tablet {
+            width: calc((100% - 30px) / 2);
+        }
+
+        @include desktop {
+        width: calc((100% - 90px) / 4);
+        }
+    }
+
+    .features__title {
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 10px;
+        color: var(--title-text-color);
+        @include font (700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+    }
+
+    .features__text {
+        margin-top: 0;
+        @include font (400, 14px, 1.71, 0.03em);
+    }
+                
+    .features__pic {
+        @include flex;
+        height: 120px;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(245, 244, 250, 1);
+        border-radius: 4px;
+    }
