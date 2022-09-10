@@ -37,30 +37,29 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: var(--bg-gradient), url(/images/mob-hero-1x.jpg);
-    background-color: #212121;
+    background-image: var(--bg-gradient), url(../images/mob-hero-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include retina {
-        background-image: var(--bg-gradient), url(/images/mob-hero-2x.jpg);
+        background-image: var(--bg-gradient), url(../images/mob-hero-2x.jpg);
     }
 
     @include tablet {
         max-width: 1199%;
         height: 400px;    
-        background-image: var(--bg-gradient), url(/images/tab-hero-1x.jpg);
+        background-image: var(--bg-gradient), url(../images/tab-hero-1x.jpg);
         @include retina {
-            background-image: var(--bg-gradient), url(/images/tab-hero-2x.jpg);
+            background-image: var(--bg-gradient), url(../images/tab-hero-2x.jpg);
         }
     }
 
     @include desktop {
         max-width: 1600px;
         height: 600px;
-        background-image: var(--bg-gradient), url(/images/desk-hero-1x.jpg);
+        background-image: var(--bg-gradient), url(../images/desk-hero-1x.jpg);
         @include retina {
-            background-image: var(--bg-gradient), url(/images/desk-hero-2x.jpg);
+            background-image: var(--bg-gradient), url(../images/desk-hero-2x.jpg);
         }
     }
 }

@@ -22,6 +22,10 @@
         color: var(--title-text-color);
         @include font (700, 14px, 1.14, 0.03em);
         text-transform: uppercase;
+
+        @include tablet {
+            text-align: left;
+        }
     }
 
     .features__text {
